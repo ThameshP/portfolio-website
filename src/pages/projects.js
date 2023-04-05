@@ -2,7 +2,6 @@ import { Navbar, Text, Link, Grid, Button, Card} from "@nextui-org/react";
 import React from "react";
 import ProjectCard from "../components/ProjectCards";
 import {motion as m} from "framer-motion";
-
 const ProjectPage = () => {
 
 
@@ -11,7 +10,7 @@ const ProjectPage = () => {
         className="projectPageContainer"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 1.2 }}
       >
         <Text
           h1
@@ -24,7 +23,14 @@ const ProjectPage = () => {
         >
           Spend a little time with my work!
         </Text>
-        <ProjectCard />
+
+        <m.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+        >
+          <ProjectCard />
+        </m.div>
       </m.div>
     );
 }

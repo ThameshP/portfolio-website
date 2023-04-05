@@ -1,15 +1,9 @@
-import {
-  Text,
-  Card,
-  Modal,
-  useModal,
-  Button
-} from "@nextui-org/react";
+import { Text, Card, Modal, useModal, Button } from "@nextui-org/react";
 import React from "react";
 import { motion as m } from "framer-motion";
 import Rodal from "rodal";
 
-const QuickNotesCard = () => {
+const MaterialQuotesCard = () => {
   const { setVisible, bindings } = useModal();
 
   return (
@@ -34,7 +28,7 @@ const QuickNotesCard = () => {
               marginBottom: "10px",
             }}
           >
-            QuickNotes
+            Material Quotes
           </Text>
           <Card css={{ w: "105vh" }}>
             <Text
@@ -52,7 +46,7 @@ const QuickNotesCard = () => {
             <Card.Body css={{ p: 0 }}>
               <Card.Image
                 className="cardImg"
-                src={require("./QuicknotesSC.png")}
+                src={require("./quoteSC.png")}
                 objectFit="cover"
                 width="100%"
                 height="100%"
@@ -72,8 +66,7 @@ const QuickNotesCard = () => {
                   marginBottom: "10px",
                 }}
               >
-                QuickNotes is a full stack web application aimed at providing an
-                ease to use platform to quickly store notes!
+Material Quotes
               </Text>
             </Modal.Body>
             <Modal.Footer>
@@ -97,4 +90,4 @@ const QuickNotesCard = () => {
   );
 };
 
-export default QuickNotesCard;
+export default MaterialQuotesCard;

@@ -42,7 +42,7 @@ const ContactPage = () => {
       css={{ width: "100%" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 1.2 }}
     >
       <Text
         h1
@@ -57,10 +57,11 @@ const ContactPage = () => {
       </Text>
       <form ref={form} onSubmit={sendEmail}>
         <Input
+          status="primary"
           size="md"
           clearable
           placeholder="Name"
-          status="primary"
+          color="primary"
           name="user_name"
           css={{
             display: "flex",
@@ -72,6 +73,7 @@ const ContactPage = () => {
           }}
         />
         <Input
+         v  
           size="md"
           clearable
           placeholder="E-mail"
@@ -104,8 +106,9 @@ const ContactPage = () => {
         />
 
         <Button
+          flat
           type="submit"
-          color="secondary"
+          color="primary"
           css={{
             display: "flex",
             justifyContent: "center",

@@ -3,6 +3,7 @@ import {
   Card,
   Modal,
   useModal,
+  Button,
 } from "@nextui-org/react";
 import React from "react";
 import { motion as m } from "framer-motion";
@@ -59,25 +60,39 @@ const ExersizeCard = () => {
               />
             </Card.Body>
           </Card>
-            <Modal scroll width="800px" height="800px" blur {...bindings}>
-              <Modal.Body>
-                <Text
-                  size="20px"
-                  css={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignContent: "center",
-                    margin: "auto",
-                    marginBottom: "10px",
-                  }}
-                >
-                  Exersize is a full stack web application aimed at enhancing
-                  our ability to exercise!
-                </Text>
-              </Modal.Body>
-              <Modal.Footer></Modal.Footer>
-            </Modal>
-          
+          <Modal scroll width="800px" height="800px" blur {...bindings}>
+            <Modal.Body>
+              <Text
+                size="20px"
+                css={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignContent: "center",
+                  margin: "auto",
+                  marginBottom: "10px",
+                }}
+              >
+                Exersize is a full stack web application aimed at enhancing our
+                ability to exercise!
+              </Text>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button
+              flat
+              color= "error"
+                css={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignContent: "center",
+                  margin: "auto",
+                }}
+              >
+
+                Github
+
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </m.div>
       </m.div>
     </div>
