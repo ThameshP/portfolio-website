@@ -56,68 +56,88 @@ const ContactPage = () => {
         Contact me!
       </Text>
       <form ref={form} onSubmit={sendEmail}>
-        <Input
-          status="primary"
-          size="md"
-          clearable
-          placeholder="Name"
-          color="primary"
-          name="user_name"
-          css={{
-            display: "flex",
-            padding: "20px",
-            justifyContent: "center",
-            alignContent: "center",
-            width: "520px",
-            margin: "auto",
-          }}
-        />
-        <Input
-         v  
-          size="md"
-          clearable
-          placeholder="E-mail"
-          status="primary"
-          name="user_email"
-          type="email"
-          css={{
-            display: "flex",
-            padding: "20px",
-            justifyContent: "center",
-            alignContent: "center",
-            width: "520px",
-            margin: "auto",
-          }}
-        />
-        <Textarea
-          size="md"
-          clearable
-          placeholder="Note/Description/Anything"
-          status="primary"
-          name="user_text"
-          css={{
-            display: "flex",
-            padding: "20px",
-            justifyContent: "center",
-            alignContent: "center",
-            width: "520px",
-            margin: "auto",
-          }}
-        />
-
-        <Button
-          flat
-          type="submit"
-          color="primary"
-          css={{
-            display: "flex",
-            justifyContent: "center",
-            alignContent: "center",
-            margin: "auto",
-          }}
+        <m.div
+          whileHover={{ scale: 1.1 }}
+          transition={{}}
         >
-          Send
-        </Button>
+          <Input
+            status="primary"
+            size="md"
+            clearable
+            placeholder="Name"
+            color="primary"
+            name="user_name"
+            css={{
+              display: "flex",
+              padding: "20px",
+              justifyContent: "center",
+              alignContent: "center",
+              width: "520px",
+              margin: "auto",
+            }}
+          />
+        </m.div>
+        <m.div
+          whileHover={{ scale: 1.1 }}
+          transition={{}}
+        >
+          <Input
+            v
+            size="md"
+            clearable
+            placeholder="E-mail"
+            status="primary"
+            name="user_email"
+            type="email"
+            css={{
+              display: "flex",
+              padding: "20px",
+              justifyContent: "center",
+              alignContent: "center",
+              width: "520px",
+              margin: "auto",
+            }}
+          />
+        </m.div>
+        <m.div
+          whileHover={{ scale: 1.1 }}
+          transition={{}}
+        >
+          <Textarea
+            size="md"
+            clearable
+            placeholder="Note/Description/Anything"
+            status="primary"
+            name="user_text"
+            css={{
+              display: "flex",
+              padding: "20px",
+              justifyContent: "center",
+              alignContent: "center",
+              width: "520px",
+              margin: "auto",
+            }}
+          />
+        </m.div>
+
+        <m.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ }}
+        >
+          <Button
+            flat
+            type="submit"
+            color="primary"
+            css={{
+              display: "flex",
+              justifyContent: "center",
+              alignContent: "center",
+              margin: "auto",
+            }}
+          >
+            Send
+          </Button>
+        </m.div>
       </form>
     </m.div>
   );

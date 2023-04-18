@@ -1,4 +1,4 @@
-import { Text, Card, Modal, useModal, Button } from "@nextui-org/react";
+import { Text, Card, Modal, useModal, Button, Link } from "@nextui-org/react";
 import React from "react";
 import { motion as m } from "framer-motion";
 import Rodal from "rodal";
@@ -66,22 +66,23 @@ const MaterialQuotesCard = () => {
                   marginBottom: "10px",
                 }}
               >
-Material Quotes
+                Material Quotes
               </Text>
             </Modal.Body>
             <Modal.Footer>
-              <Button
-                flat
-                color="error"
+              <Link
                 css={{
                   display: "flex",
                   justifyContent: "center",
                   alignContent: "center",
                   margin: "auto",
                 }}
+                href="https://github.com/ThameshP/MaterialQuotes"
               >
-                Github
-              </Button>
+                <Button flat color="error">
+                  Github
+                </Button>
+              </Link>
             </Modal.Footer>
           </Modal>
         </m.div>

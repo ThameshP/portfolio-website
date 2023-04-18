@@ -4,6 +4,7 @@ import {
   Modal,
   useModal,
   Button,
+  Link,
 } from "@nextui-org/react";
 import React from "react";
 import { motion as m } from "framer-motion";
@@ -77,20 +78,22 @@ const ExersizeCard = () => {
               </Text>
             </Modal.Body>
             <Modal.Footer>
-              <Button
-              flat
-              color= "error"
+              <Link
                 css={{
                   display: "flex",
                   justifyContent: "center",
                   alignContent: "center",
                   margin: "auto",
                 }}
+                href="https://github.com/ThameshP/Exersize"
               >
-
-                Github
-
-              </Button>
+                <Button
+                  flat
+                  color="error"
+                >
+                  Github
+                </Button>
+              </Link>
             </Modal.Footer>
           </Modal>
         </m.div>

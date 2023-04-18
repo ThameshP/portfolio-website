@@ -4,6 +4,7 @@
 
 html {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body{
@@ -56,3 +57,9 @@ margin: 70px;
 
 
 
+.containerLink {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
